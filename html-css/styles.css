@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #02156d;
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+  height: 400px;
+}
+
+.header h1 {
+    font-size: 4em;
+}
+
+.header p {
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.card.selected {
+  border: 2px solid #4562df;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  text-align: left;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.card-header p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.price {
+  font-size: 3em;
+  color: #333;
+  display: inline-block;
+}
+
+.price span {
+  font-size: 0.5em;
+  color: #777;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 10px;
+  margin: 0;
+  border-top: #f4f4f4 2px solid;
+  text-align: left;
+}
+
+.features li {
+  padding: 2px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4562df;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.faq {
+  color: #777;
+  text-align: center;
+  padding: 20px;
+}
+
+.faq-container {
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.faq-item {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+}
