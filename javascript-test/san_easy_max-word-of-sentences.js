@@ -13,11 +13,20 @@ const sentences = [
 
 function result(sentences) {
   // your code here
+  // #1
   const lengthOfSentences = sentences.map((sentences) => {
     const wordsLength = sentences.split(' ').length;
     return wordsLength;
   })
   return Math.max(...lengthOfSentences);
+
+  // #2
+  // const lengthOfSentences = sentences.map( sentence => {
+  //   const sentenceLength = sentence.split(' ');
+  //   const amountOfWords = sentenceLength.map(word => word.length);
+  //   return amountOfWords.length;
+  // })
+  // return Math.max(...lengthOfSentences);
 }
 
 console.log(result(sentences));
